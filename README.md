@@ -5,7 +5,7 @@
 
 This image is based on the LinuxServer.io and includes the necessary drivers to pass through the Nvidia graphcis cards to Plex.
 
-Make sure to pass through /dev/dri as a read-write folder. It seems to not owrk when passed as a device.
+Make sure to pass through /dev/dri as a read-write folder. It seems to not work when passed as a device.
 
 # Usage With UnRAID
 
