@@ -9,3 +9,5 @@ RUN apt purge -y nvidia*
 RUN apt install -y nvidia-driver-390
 
 RUN apt install -y nvidia-cuda-toolkit
+
+RUN git clone https://github.com/keylase/nvidia-patch.git && cd nvidia-patch && chmod a+x patch.sh && ./patch.sh && cd ../ && rm -rf nvidia-patch
