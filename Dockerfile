@@ -1,4 +1,8 @@
-FROM linuxserver/plex:latest
+FROM siwatinc/nodejsubuntu_base_image
+
+RUN apt-get -y install ffmpeg
+
+RUN npm install -g h265ize
 
 RUN apt update && apt install -y software-properties-common
 
@@ -17,3 +21,5 @@ COPY patch.sh /patch.sh
 RUN chmod a+x /patch.sh
 
 RUN /patch.sh 410.78
+
+CMD script --return -c "h265ize -v $extraarg -m '$preset' -d $output -q $qp -f '$format' $input" /dev/null
