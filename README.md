@@ -3,8 +3,6 @@
 [![Docker Automated build](https://img.shields.io/docker/automated/bassrock/plex-nvidia-docker.svg)](https://hub.docker.com/r/bassrock/plex-nvidia-docker)
 [![Docker Build Status](https://img.shields.io/docker/build/bassrock/plex-nvidia-docker.svg)](https://hub.docker.com/r/bassrock/plex-nvidia-docker/)
 
-This image is based on the LinuxServer.io and includes the necessary drivers to pass through the NVIDIA graphics cards to Plex.
-
 Make sure to pass through /dev/dri as a read-write folder. It seems to not work when passed as a device.
 
 # Usage With UnRAID
