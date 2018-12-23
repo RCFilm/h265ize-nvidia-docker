@@ -1,8 +1,12 @@
-FROM siwatinc/nodejsubuntu_base_image
+FROM ubuntu:latest
+
+RUN apt-get update && apt-get -y install git wget mc nano sudo
 
 RUN apt update && apt install -y software-properties-common
 
 RUN add-apt-repository ppa:graphics-drivers && apt update
+
+RUN apt-get -y install npm ffmpeg
 
 RUN npm install -g h265ize
 
@@ -20,4 +24,4 @@ RUN chmod a+x /patch.sh
 
 RUN /patch.sh 410.78
 
-CMD script --return -c "h265ize -v $extraarg -m '$preset' -d $output -q $qp -f '$format' $input" /dev/null
+CMD script --return -c "h265ize -v $extraarg -m '$preset' -d $output -q $qp -f '$format' $input $delete $custom" /dev/null
