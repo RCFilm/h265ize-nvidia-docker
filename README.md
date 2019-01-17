@@ -1,7 +1,6 @@
-# NVIDIA Docker
+work in progress does not work
 
-[![Docker Automated build](https://img.shields.io/docker/automated/bassrock/plex-nvidia-docker.svg)](https://hub.docker.com/r/bassrock/plex-nvidia-docker)
-[![Docker Build Status](https://img.shields.io/docker/build/bassrock/plex-nvidia-docker.svg)](https://hub.docker.com/r/bassrock/plex-nvidia-docker/)
+
 
 Make sure to pass through /dev/dri as a read-write folder. It seems to not work when passed as a device.
 
