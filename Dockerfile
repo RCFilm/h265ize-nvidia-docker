@@ -10,7 +10,7 @@ RUN add-apt-repository ppa:graphics-drivers && apt update
 
 RUN apt-get -y install npm ffmpeg
 
-RUN npm install https://github.com/RCFilm/h265ize.git
+RUN npm install https://github.com/RCFilm/h265ize_nevc.git
 
 RUN apt install -y ubuntu-drivers-common lshw vainfo va-driver-all libva-dev
 
