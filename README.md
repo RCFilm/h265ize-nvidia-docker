@@ -6,15 +6,9 @@ Make sure to pass through /dev/dri as a read-write folder. It seems to not work 
 
 # Usage With UnRAID
 
-This works with UnRAID when used with this plugin: https://github.com/CHBMB/Unraid-NVIDIA-Plugin or building your own here: https://github.com/CHBMB/Unraid-NVIDIA
 
 You need to use the tag of this docker that corresponds to the driver version that is installed in your base kernel.
 
-# Known Steps to Make It Work (Building Your Own)
-1. Make sure you are on the latest unRaid *Stock* Version (Latest Tested 6.6.5)
-2. Install this plugin: `https://raw.githubusercontent.com/bassrock/Unraid-NVIDIA-Plugin/master/plugins/UnraidNVIDIA.plg`
-3. Switch to the latest NVidia UnRaid build in settings.
-4. Use the docker tag that corresponds to the installed driver version.
 
 ```bash
 #!/bin/bash
